@@ -20,6 +20,8 @@ export default function App() {
   const [text, setText] = useState("");
   const [toDos, setToDos] = useState({});
 
+  console.log(toDos);
+
   useEffect(() => {
     loadToDos();
   }, []);
