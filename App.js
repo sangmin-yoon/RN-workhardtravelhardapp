@@ -19,7 +19,6 @@ export default function App() {
   const [working, setWorking] = useState(true);
   const [text, setText] = useState("");
   const [toDos, setToDos] = useState({});
-
   useEffect(() => {
     loadToDos();
   }, []);
@@ -51,7 +50,7 @@ export default function App() {
     Alert.alert("Delete To do", "Are you sure?", [
       { text: "Cancel" },
       {
-        text: "I'm Sure",
+        text: "I'm Sure.",
         style: "destructive",
         onPress: () => {
           const newToDos = { ...toDos };
